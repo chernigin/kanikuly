@@ -1,0 +1,27 @@
+#calendar th, #calendar td{
+    text-align: center;
+    width:3px;
+    height: 3px;
+    padding:1px;
+}
+#calendar {
+    margin-bottom: 2px;
+}
+#calendar .weekdays-row th {
+    background-color: #fff;
+     width:3px;
+    height: 3px;
+}
+#calendar .calendar-selected-day{}
+#calendar .calendar-selected-day a {
+    font-weight: bolder;color: #00aa00;
+    border:1px solid #E00000;
+    padding: 2px 5px 2px 5px;
+}
+#calendar .selected-day a {
+    font-weight:900;
+    font-size: 110%;
+    color:red;
+/*    background-color: red;*/
+    /*border:1px solid #E00000;*/
+}

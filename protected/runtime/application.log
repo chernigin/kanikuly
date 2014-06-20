@@ -1,0 +1,1843 @@
+2014/06/10 06:37:44 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/kanikuly/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/kanikuly/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/main.php (51)
+in /var/www/kanikuly/protected/views/layouts/column1.php (6)
+in /var/www/kanikuly/protected/controllers/SiteController.php (32)
+2014/06/10 06:38:06 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/kanikuly/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/kanikuly/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/main.php (51)
+in /var/www/kanikuly/protected/views/layouts/column1.php (6)
+in /var/www/kanikuly/protected/controllers/SiteController.php (32)
+2014/06/10 07:01:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'db.kanikuly.sfedu.ru' (4)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/kanikuly/protected/controllers/SiteController.php(91): CActiveRecord->count()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/kanikuly/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/kanikuly/index.php?r=site/index
+HTTP_REFERER=http://localhost/kanikuly/index.php?r=site/login
+---
+2014/06/10 07:01:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'db.kanikuly.sfedu.ru' (4)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/kanikuly/protected/controllers/SiteController.php(91): CActiveRecord->count()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/kanikuly/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/kanikuly/
+---
+2014/06/10 07:02:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'db.kanikuly.sfedu.ru' (4)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/kanikuly/protected/controllers/SiteController.php(91): CActiveRecord->count()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/kanikuly/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/kanikuly/
+---
+2014/06/10 07:02:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'db.kanikuly.sfedu.ru' (4)' in /var/www/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/yii/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/yii/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/yii/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/yii/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /var/www/yii/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /var/www/yii/framework/db/ar/CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#6 /var/www/yii/framework/db/ar/CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#7 /var/www/kanikuly/protected/controllers/SiteController.php(91): CActiveRecord->count()
+#8 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#19 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/kanikuly/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/kanikuly/
+---
+2014/06/10 07:14:09 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:10 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:11 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:11 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:11 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:12 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:12 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:15:12 [error] [php] Undefined offset: 0 (/var/www/kanikuly/protected/views/layouts/column2.php:173)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#2 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#5 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#8 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/column2.php (173)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:16:05 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/site/rss.php:9)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/kanikuly/protected/views/layouts/column2.php(197): SiteController->renderPartial()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#6 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/rss.php (9)
+in /var/www/kanikuly/protected/views/layouts/column2.php (197)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+2014/06/10 07:16:06 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/site/rss.php:9)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/kanikuly/protected/views/layouts/column2.php(197): SiteController->renderPartial()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#6 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/rss.php (9)
+in /var/www/kanikuly/protected/views/layouts/column2.php (197)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+2014/06/10 07:17:13 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/layouts/main.php:174)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /var/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /var/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /var/www/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /var/www/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /var/www/kanikuly/protected/views/layouts/column2.php(241): SiteController->endContent()
+#7 /var/www/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#11 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#14 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#17 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#20 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#21 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/layouts/main.php (174)
+in /var/www/kanikuly/protected/views/layouts/column2.php (241)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+2014/06/10 07:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:22:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly//css/bootstrap.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly//css/b...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly//css/bootstrap.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:23:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:23:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/login
+---
+2014/06/10 07:23:57 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:23:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/login
+---
+2014/06/10 07:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/images/gazeta.png".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/images...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/images/gazeta.png
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/registration
+---
+2014/06/10 07:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/registration
+---
+2014/06/10 07:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/registration
+---
+2014/06/10 07:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/registration
+---
+2014/06/10 07:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/registration
+---
+2014/06/10 07:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/screen.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/sc...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/screen.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/print.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/pr...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/print.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/main.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/ma...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/main.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/css/form.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/css/fo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/css/form.css
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:33:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/js/bootstrap.js".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/js/boo...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/js/bootstrap.js
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/login".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/login')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/login
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "kanikuly/login".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kanikuly/login')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/kanikuly/login
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/10 07:56:07 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/views/site/rss.php:9)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#2 /var/www/kanikuly/protected/views/layouts/column2.php(197): SiteController->renderPartial()
+#3 /var/www/yii/framework/web/CBaseController.php(126): require()
+#4 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#5 /var/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#6 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#7 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#10 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#13 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#16 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#17 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#19 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/rss.php (9)
+in /var/www/kanikuly/protected/views/layouts/column2.php (197)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+2014/06/10 07:59:28 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. Выполнявшийся SQL-запрос: CALL statistic_request1(3);.
+in /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php (9)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 07:59:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. The SQL statement executed was: CALL statistic_request1(3);' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php(9): CDbCommand->queryAll()
+#2 [internal function]: DefaultController->actionIndex(3)
+#3 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/kanikuly/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/kanikuly/admin
+---
+2014/06/10 08:19:53 [error] [php] include(RequestStatus.php): failed to open stream: No such file or directory (/var/www/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(395): spl_autoload_call()
+#1 /var/www/yii/framework/db/ar/CActiveRecord.php(611): model()
+#2 /var/www/yii/framework/web/CSort.php(330): Requestuser->getAttributeLabel()
+#3 /var/www/yii/framework/web/CSort.php(282): CSort->resolveLabel()
+#4 /var/www/yii/framework/zii/widgets/grid/CDataColumn.php(116): CSort->link()
+#5 /var/www/yii/framework/zii/widgets/grid/CGridColumn.php(127): CDataColumn->renderHeaderCellContent()
+#6 /var/www/yii/framework/zii/widgets/grid/CGridView.php(506): CDataColumn->renderHeaderCell()
+#7 /var/www/yii/framework/zii/widgets/grid/CGridView.php(480): CGridView->renderTableHeader()
+#8 /var/www/yii/framework/zii/widgets/CBaseListView.php(167): CGridView->renderItems()
+#9 unknown(0): CGridView->renderSection()
+#10 /var/www/yii/framework/zii/widgets/CBaseListView.php(150): preg_replace_callback()
+#11 /var/www/yii/framework/zii/widgets/CBaseListView.php(135): CGridView->renderContent()
+#12 /var/www/yii/framework/web/CBaseController.php(173): CGridView->run()
+#13 /var/www/kanikuly/protected/views/requestuser/index.php(83): StudentController->widget()
+#14 /var/www/yii/framework/web/CBaseController.php(126): require()
+#15 /var/www/yii/framework/web/CBaseController.php(95): StudentController->renderInternal()
+#16 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#17 /var/www/kanikuly/protected/views/student/view.php(63): StudentController->renderPartial()
+#18 /var/www/yii/framework/web/CBaseController.php(126): require()
+#19 /var/www/yii/framework/web/CBaseController.php(95): StudentController->renderInternal()
+#20 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#21 /var/www/yii/framework/web/CController.php(782): StudentController->renderPartial()
+#22 /var/www/kanikuly/protected/controllers/StudentController.php(19): StudentController->render()
+#23 unknown(0): StudentController->actionView()
+#24 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#25 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#26 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#27 /var/www/yii/framework/web/filters/CFilterChain.php(133): StudentController->runAction()
+#28 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#29 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#30 /var/www/yii/framework/web/filters/CInlineFilter.php(58): StudentController->filterAccessControl()
+#31 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#32 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#33 /var/www/yii/framework/web/CController.php(265): StudentController->runActionWithFilters()
+#34 /var/www/yii/framework/web/CWebApplication.php(282): StudentController->run()
+#35 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#36 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#37 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/profile/111
+in /var/www/kanikuly/protected/views/requestuser/index.php (83)
+in /var/www/kanikuly/protected/views/student/view.php (63)
+in /var/www/kanikuly/protected/controllers/StudentController.php (19)
+2014/06/10 08:34:14 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/10 08:36:00 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php:2389)
+Stack trace:
+#0 /var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php(800): PHPMailer->CreateHeader()
+#1 /var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php(764): PHPMailer->PreSend()
+#2 /var/www/kanikuly/protected/controllers/SiteController.php(158): PHPMailer->Send()
+#3 /var/www/kanikuly/protected/controllers/SiteController.php(138): SiteController->mailsend()
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/site/contact
+in /var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php (2389)
+in /var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php (1369)
+in /var/www/kanikuly/protected/extensions/smtpmail/PHPMailer.php (800)
+2014/06/10 08:47:47 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 06:04:13 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 06:33:10 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:16:06 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:16:22 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. Выполнявшийся SQL-запрос: CALL statistic_request1(3);.
+in /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php (9)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:16:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. The SQL statement executed was: CALL statistic_request1(3);' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php(9): CDbCommand->queryAll()
+#2 [internal function]: DefaultController->actionIndex(3)
+#3 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/kanikuly/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/kanikuly/admin
+---
+2014/06/11 07:18:53 [warning] [application] Не удалось присвоить небезопасный атрибут "status" класса "Request".
+in /var/www/kanikuly/protected/modules/admin/controllers/RequestController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:22:57 [warning] [application] Не удалось присвоить небезопасный атрибут "status" класса "Request".
+in /var/www/kanikuly/protected/modules/admin/controllers/RequestController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:24:42 [warning] [application] Не удалось присвоить небезопасный атрибут "status" класса "Request".
+in /var/www/kanikuly/protected/modules/admin/controllers/RequestController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 07:24:53 [warning] [application] Не удалось присвоить небезопасный атрибут "status" класса "Request".
+in /var/www/kanikuly/protected/modules/admin/controllers/RequestController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 11:23:59 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 11:25:55 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/11 12:43:09 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 07:31:29 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:11:46 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:11:51 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:11:57 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:23:18 [error] [php] Use of undefined constant status - assumed 'status' (/var/www/kanikuly/protected/views/requestuser/index.php:54)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#1 /var/www/kanikuly/protected/views/student/view.php(63): StudentController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): StudentController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): StudentController->renderPartial()
+#6 /var/www/kanikuly/protected/controllers/StudentController.php(19): StudentController->render()
+#7 unknown(0): StudentController->actionView()
+#8 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): StudentController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): StudentController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): StudentController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): StudentController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/profile/11111111
+in /var/www/kanikuly/protected/views/requestuser/index.php (54)
+in /var/www/kanikuly/protected/views/student/view.php (63)
+in /var/www/kanikuly/protected/controllers/StudentController.php (19)
+2014/06/17 11:25:54 [error] [php] Use of undefined constant name - assumed 'name' (/var/www/kanikuly/protected/views/requestuser/index.php:54)
+Stack trace:
+#0 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#1 /var/www/kanikuly/protected/views/student/view.php(63): StudentController->renderPartial()
+#2 /var/www/yii/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii/framework/web/CBaseController.php(95): StudentController->renderInternal()
+#4 /var/www/yii/framework/web/CController.php(869): StudentController->renderFile()
+#5 /var/www/yii/framework/web/CController.php(782): StudentController->renderPartial()
+#6 /var/www/kanikuly/protected/controllers/StudentController.php(19): StudentController->render()
+#7 unknown(0): StudentController->actionView()
+#8 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#9 /var/www/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(133): StudentController->runAction()
+#12 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/yii/framework/web/filters/CInlineFilter.php(58): StudentController->filterAccessControl()
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(265): StudentController->runActionWithFilters()
+#18 /var/www/yii/framework/web/CWebApplication.php(282): StudentController->run()
+#19 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/profile/11111111
+in /var/www/kanikuly/protected/views/requestuser/index.php (54)
+in /var/www/kanikuly/protected/views/student/view.php (63)
+in /var/www/kanikuly/protected/controllers/StudentController.php (19)
+2014/06/17 11:27:00 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(54): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/17 11:27:40 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/17 11:27:44 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+---
+2014/06/17 11:28:37 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+---
+2014/06/17 11:28:39 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+---
+2014/06/17 11:28:39 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+---
+2014/06/17 11:37:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. Выполнявшийся SQL-запрос: CALL statistic_request1(3);.
+in /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php (9)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:37:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. The SQL statement executed was: CALL statistic_request1(3);' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php(9): CDbCommand->queryAll()
+#2 [internal function]: DefaultController->actionIndex(3)
+#3 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/kanikuly/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/kanikuly/admin
+---
+2014/06/17 11:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 11:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 11:41:45 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:41:45 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:41:52 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 11:44:04 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:04 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:10 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/update/id/2
+---
+2014/06/17 11:44:28 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:28 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:31 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/update/id/2
+---
+2014/06/17 11:44:45 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:45 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (93)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:48 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:49 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:49 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:49 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 11:44:50 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:03 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:08 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:14 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:14 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. Выполнявшийся SQL-запрос: CALL statistic_request1(3);.
+in /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php (9)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[HY000]: General error: 1449 The user specified as a definer ('kanikuly'@'%') does not exist. The SQL statement executed was: CALL statistic_request1(3);' in /var/www/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/kanikuly/protected/modules/admin/controllers/DefaultController.php(9): CDbCommand->queryAll()
+#2 [internal function]: DefaultController->actionIndex(3)
+#3 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#4 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#5 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('admin')
+#15 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/kanikuly/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/kanikuly/admin
+HTTP_REFERER=http://localhost/kanikuly/login
+---
+2014/06/17 13:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 13:49:49 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:49 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 13:49:52 [warning] [application] Не удалось присвоить небезопасный атрибут "document" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:52 [warning] [application] Не удалось присвоить небезопасный атрибут "album" класса "News".
+in /var/www/kanikuly/protected/modules/admin/controllers/NewsController.php (69)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:49:55 [error] [php] strtotime(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/var/www/yii/framework/i18n/CDateFormatter.php:96)
+Stack trace:
+#0 /var/www/yii/framework/web/CBaseController.php(126): require()
+#1 /var/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#2 /var/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#3 /var/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#4 /var/www/kanikuly/protected/controllers/SiteController.php(103): SiteController->render()
+#5 /var/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#6 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/yii/framework/web/filters/CFilterChain.php(133): SiteController->runAction()
+#8 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/yii/framework/web/filters/CInlineFilter.php(58): SiteController->filterAccessControl()
+#11 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/kanikuly/index.php(13): CWebApplication->run()
+REQUEST_URI=/kanikuly/
+in /var/www/kanikuly/protected/views/site/index.php (104)
+in /var/www/kanikuly/protected/controllers/SiteController.php (103)
+in /var/www/kanikuly/index.php (13)
+2014/06/17 13:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/update/id/3
+---
+2014/06/17 13:50:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 13:50:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/949621f9/contents.css".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('assets/949621f9...')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/kanikuly/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kanikuly/assets/949621f9/contents.css
+HTTP_REFERER=http://localhost/kanikuly/admin/news/create
+---
+2014/06/17 13:50:34 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+HTTP_REFERER=http://localhost/kanikuly/
+---
+2014/06/19 05:12:20 [warning] [application] Не удалось присвоить небезопасный атрибут "passworddop" класса "LoginForm".
+in /var/www/kanikuly/protected/controllers/SiteController.php (178)
+in /var/www/kanikuly/index.php (13)
+2014/06/19 05:12:23 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Requestuser.ID".' in /var/www/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('ID')
+#1 /var/www/kanikuly/protected/views/requestuser/index.php(85): CActiveRecord->__get('ID')
+#2 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#3 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#4 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#5 /var/www/kanikuly/protected/views/student/view.php(63): CController->renderPartial('/requestuser/in...', Array)
+#6 /var/www/yii/framework/web/CBaseController.php(126): require('/var/www/kaniku...')
+#7 /var/www/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/kaniku...', Array, true)
+#8 /var/www/yii/framework/web/CController.php(869): CBaseController->renderFile('/var/www/kaniku...', Array, true)
+#9 /var/www/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /var/www/kanikuly/protected/controllers/StudentController.php(19): CController->render('view', Array)
+#11 [internal function]: StudentController->actionView('11111111')
+#12 /var/www/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(StudentController), Array)
+#13 /var/www/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(StudentController), Object(ReflectionMethod), Array)
+#14 /var/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('student/view')
+#24 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/kanikuly/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/kanikuly/profile/11111111
+HTTP_REFERER=http://localhost/kanikuly/
+---
